@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Digiberkat - Aplikasi Toko & Pelanggan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #333;
+      background-color: #f5cf7d;
+    }
+
+    .hero {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .blur-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: url('images/foto-toko.png');
+      background-size: cover;
+      background-position: center;
+      filter: blur(4px);
+      transform: scale(1.1);
+      z-index: 1;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(to bottom, rgba(245,207,125,0) 0%, #f5cf7d 100%);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      color: white;
+      padding-top: 60px;
+    }
+
+    .logo {
+      width: 180px;
+      margin-bottom: 10px;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .content {
+      padding: 30px;
+      background: linear-gradient(to bottom , #f5cf7d, #f3a847);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 220px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="blur-bg"></div>
+    <div class="hero-content">
+      <img src="images/logo.png" alt="Logo Digiberkat" class="logo">
+      <h1>Selamat Datang di <i>Digiberkat</i>!</h1>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <p><b>Digiberkat</b> adalah ekosistem aplikasi mobile dan web yang kami buat untuk Berkat Cell, sebuah toko aksesoris HP offline. Digiberkat memberikan pengalaman berbelanja yang nyaman dan praktis bagi pelanggan serta memungkinkan Berkat Cell menggaet pelanggan baru. 
+        Aplikasi ini terdiri dari dua platform:</p>
+      <ul>
+        <li><b>Web Admin:</b> untuk pemilik/karyawan toko dalam mengelola produk dan pesanan</li>
+        <li><b>Mobile App:</b> untuk pelanggan yang ingin melihat katalog & melakukan pemesanan</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📦 Fitur Utama</h2>
+      <ul>
+        <li>Manajemen Produk oleh Admin</li>
+        <li>Rekomendasi AI Produk Untuk Pelanggan</li>
+        <li>Pemesanan oleh Pelanggan</li>
+        <li>Keranjang Belanja</li>
+        <li>Riwayat Pesanan</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🖥️ Tampilan Web Admin</h2>
+      <div class="gallery">
+        <img src="images/dashboard-web.png" alt="Dashboard" style="width: 400px; height: auto;">
+        <img src="images/produk-web.png" alt="Produk" style="width: 400px; height: auto;">
+        <img src="images/pesanan-web.png" alt="Pesanan" style="width: 400px; height: auto;">
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📱 Tampilan Aplikasi Pelanggan</h2>
+      <div class="gallery">
+        <img src="images/ss-login-app.png" alt="Login">
+        <img src="images/ss-katalog-app.png" alt="Katalog">
+        <img src="images/ss-ai-app.png" alt="Rekomendasi AI">
+        <img src="images/ss-keranjang-app.png" alt="Keranjang">
+        <img src="images/ss-riwayat-app.png" alt="Riwayat Pesanan">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
