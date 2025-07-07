@@ -66,21 +66,23 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-items: center;
     }
 
     .gallery img {
-      width: 220px;
+      width: 100%;
+      max-width: 220px;
       border: 2px solid #ccc;
       border-radius: 8px;
     }
 
-    /* Styling untuk tombol Akses Web Admin */
     .admin-button-section {
-      text-align: center;
+      text-align: left;
       margin-bottom: 30px;
+      padding-left: 10px;
     }
 
     .admin-button {
@@ -138,13 +140,13 @@
     <div class="section">
       <h2>🖥️ Tampilan Web Admin</h2>
       <div class="gallery">
-        <img src="images/dashboard-baru.png" alt="Dashboard" style="width: 200px; height: auto;">
-        <img src="images/produk-baru.png" alt="Produk" style="width: 200px; height: auto;">
-        <img src="images/pesanan-baru.png" alt="Pesanan" style="width: 200px; height: auto;">
-        <img src="images/login-baru.png" alt="Login" style="width: 200px; height: auto;">
-        <img src="images/akun.png" alt="Akun" style="width: 200px; height: auto;">
-        <img src="images/restok.png" alt="Restok" style="width: 200px; height: auto;">
-        <img src="images/tambah-produk.png" alt="Tambah" style="width: 200px; height: auto;">
+        <img src="images/dashboard-baru.png" alt="Dashboard">
+        <img src="images/produk-baru.png" alt="Produk">
+        <img src="images/pesanan-baru.png" alt="Pesanan">
+        <img src="images/login-baru.png" alt="Login">
+        <img src="images/akun.png" alt="Akun">
+        <img src="images/restok.png" alt="Restok">
+        <img src="images/tambah-produk.png" alt="Tambah Produk">
       </div>
     </div>
 
